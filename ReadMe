@@ -1,0 +1,95 @@
+# RecycleConnect — Frontend
+
+Vanilla HTML/CSS/JS build for the RecycleConnect Admin Dashboard.
+
+## ⚠️ Before you touch anything
+
+1. Install the **Live Server** extension in VS Code (by Ritwick Dey).
+2. Always open pages with **"Open with Live Server"** (right-click the file → Open with Live Server). **Never double-click to open a file directly** — the shared sidebar/topbar won't load if you do, since they rely on `fetch()`, which browsers block on `file://` paths.
+
+## Folder structure
+
+```
+/
+  dashboard.html
+  /pages
+    /collection-partners
+      collection-partners.html
+      collection-partners.css
+      collection-partners.js
+    /recycler-organisations
+    /households
+    /transactions
+    /disputes
+    /settings
+  /components          ← DO NOT EDIT unless you're Frontend Lead
+    sidebar.html
+    topbar.html
+    style.css
+    include.js
+  /assets
+    /logo
+```
+
+## Working on your own page
+
+1. Your page file, CSS, and JS already exist inside `/pages/your-page-name/`.
+2. **Only edit inside your own folder.** Never touch anything in `/components/`.
+3. Paste this exact boilerplate into your page's `<head>` and `<body>` (adjust the title, CSS/JS filenames, and `data-page-title` to match your page):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../components/style.css">
+    <link rel="stylesheet" href="your-page-name.css">
+</head>
+<body data-page-title="Your Page Name">
+    <div id="sidebar-placeholder"></div>
+
+    <div class="main-content">
+        <div id="topbar-placeholder"></div>
+
+        <main class="page-content">
+            <!-- start your work here -->
+        </main>
+    </div>
+
+    <script src="../../components/include.js"></script>
+    <script src="your-page-name.js"></script>
+</body>
+</html>
+```
+
+4. Add your own CSS rules inside your page's own `.css` file — never inside `components/style.css`.
+5. If you need JS specific to your page, write it in your page's own `.js` file — it loads *after* `include.js`, so the sidebar/topbar will already be in the DOM by the time your script runs (though not guaranteed instantly, since `fetch()` is asynchronous — if you need to reliably wait for them, ask Frontend Lead).
+
+## Git workflow
+
+1. Clone the repo, then create your own branch before making changes:
+   ```
+   git checkout -b feature/your-page-name
+   ```
+2. Commit and push your branch:
+   ```
+   git add .
+   git commit -m "Build out collection partners page"
+   git push origin feature/your-page-name
+   ```
+3. Open a Pull Request into `main` on GitHub. Frontend Lead will review and merge.
+4. **Never push directly to `main`.**
+
+## Rules recap
+
+- ✅ Edit only your own `/pages/your-folder/` files
+- ✅ Open pages with Live Server, not by double-clicking
+- ❌ Don't edit `sidebar.html`, `topbar.html`, `style.css` (shared), or `include.js`
+- ❌ Don't push directly to `main`
