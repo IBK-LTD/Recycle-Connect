@@ -20,10 +20,178 @@
     <div id="topbar-placeholder"></div>
 
     <main>
-        <!-- start your wwork here -->
+        <!-- Top Navigation -->
+        <div class="top-bar">
+
+            <div class="tabs">
+                <button class="tab active">All Partners</button>
+                <button class="tab">Pending (7)</button>
+                <button class="tab">Active</button>
+                <button class="tab">Deactivated</button>
+            </div>
+
+            <div class="search-box">
+                <img src="icons/Search-icon.svg" alt="search-icon" class="search-icon">
+                <input type="text" placeholder="Search Partners...">
+            </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partner Name</th>
+                        <th>Contact</th>
+                        <th>Service Area</th>
+                        <th>Status</th>
+                        <th>Joined Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>
+                           <div class="partner-info">
+                                <h4>Green Collectors</h4>
+                                <p>green@gbcollect.com</p>
+                           </div>
+                        </td>
+
+                        <td>08031234567</td>
+                        <td>Lagos Mainland</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 18, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2-->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Waste Warriors</h4>
+                                <p>info@wastewarriors.com</p>
+                            </div>
+                        </td>
+                        <td>08062845476</td>
+                        <td>Abuja</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Clean Planet</h4>
+                                <p>clean@cleanplanet.com</p>      
+                            </div>
+                        </td>
+                        <td>08123456789</td>
+                        <td>Port Harcourt</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 5,2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Eco Collect Hub</h4>
+                                <p>ecohub@email.com</p>
+                            </div>
+                        </td>
+                        <td>08154567890</td>
+                        <td>Ibadan</td>
+                        <td>
+                            <span class="status deactivated">Deactivated</span>
+                        </td>
+                        <td>Apr 28, 2006</td>
+                        <td>
+                            <button class="action-btn">Activate</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Recycle Plus</h4>
+                                <p>recycleplus@gmail.com</p>    
+                            </div>
+                        </td>
+                        <td>09005678001</td>
+                        <td>Kano</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>Apr 20, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 6 -->
+
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Green Legacy</h4>
+                                <p>legacy@gbcollect.com</p> 
+                            </div>
+                        </td>
+                        <td>08031234567</td>
+                        <td>Ogun</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer -->
+
+            <div class="table-footer">
+                <p>Showing 1 to 5 of 124 partners</p>
+
+                <div class="pagination">
+                    <button>
+                        <img src="icons/Arrow-1.svg"> 
+                    </button>
+                    <button class="page active-page">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button class="page">4</button>
+                    <button>
+                         <img src="icons/Arrow-2.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
     </div>
     
     <script src="../components/include.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

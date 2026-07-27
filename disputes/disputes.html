@@ -20,10 +20,154 @@
     <div id="topbar-placeholder"></div>
 
     <main>
-        <!-- start your wwork here -->
+         <!-- Top Navigation -->
+        <div class="top-bar">
+
+            <div class="tabs">
+                <button class="tab active">All Disputes</button>
+                <button class="tab">Open (5)</button>
+                <button class="tab">Resolved</button>
+                <button class="tab">Closed</button>
+            </div>
+
+            <div class="search-box">
+                <img src="icons/Search-icon.svg" alt="search-icon" class="search-icon">
+                <input type="text" placeholder="Search Organisations">
+            </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dispute ID</th>
+                        <th>Household</th>
+                        <th>Partner</th>
+                        <th>Issue Type</th>
+                        <th>Status</th>
+                        <th>Reported Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>DIS-1003</td>
+                        <td>Chioma Okafor</td>
+                        <td>Green Collectors</td>
+                        <td>Quantity Mismatch</td>
+                        <td>
+                            <span class="status open">Open</span>
+                        </td>
+                        <td>May 18, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2-->
+                    <tr>
+                        <td>DIS-1002</td>
+                        <td>Adewale Johnson</td>
+                        <td>Waste Warriors</td>
+                        <td>Payment Mismatch</td>
+                        <td>
+                            <span class="status open">Open</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>DIS-1001</td>
+                        <td>Maryann Yusuf</td>
+                        <td>Clean Planet</td>
+                        <td>Quantity Mismatch</td>
+                        <td>
+                            <span class="status resolved">Resolved</span>
+                        </td>
+                        <td>May 5,2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>DIS-1000</td>
+                        <td>Emeka Nnaji</td>
+                        <td>Recycle Plus</td>
+                        <td>Payment Mismatch</td>
+                        <td>
+                            <span class="status closed">Closed</span>
+                        </td>
+                        <td>Apr 28, 2006</td>
+                        <td>
+                            <button class="action-btn">Open</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>DIS-0999</td>
+                        <td>Grace Adebayo</td>
+                        <td>Green Collectors</td>
+                        <td>Quantity Mismatch</td>
+                        <td>
+                            <span class="status closed">Closed</span>
+                        </td>
+                        <td>Apr 20, 2006</td>
+                        <td>
+                            <button class="action-btn">Open</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 6 -->
+
+                    <tr>
+                        <td>DIS-0998</td>
+                        <td>Lawal Yusuf</td>
+                        <td>Recycle Plus</td>
+                        <td>Payment Mismatch</td>
+                        <td>
+                            <span class="status resolved">Resolved</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">view</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer -->
+
+            <div class="table-footer">
+                <p>Showing 1 to 5 of 124 partners</p>
+
+                <div class="pagination">
+                    <button>
+                        <img src="icons/Arrow-1.svg"> 
+                    </button>
+                    <button class="page active-page">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button class="page">4</button>
+                    <button>
+                         <img src="icons/Arrow-2.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
     </div>
     
     <script src="../components/include.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
