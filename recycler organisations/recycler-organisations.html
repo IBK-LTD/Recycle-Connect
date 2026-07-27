@@ -10,20 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../components/shared.css">
-     <link
-     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
-     rel="stylesheet"
-     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
 
     <link rel="stylesheet" href="../recycler organisations/style.css">
 </head>
@@ -34,196 +20,178 @@
     <div id="topbar-placeholder"></div>
 
     <main>
+          <!-- Top Navigation -->
+        <div class="top-bar">
 
-         <div class="container">
+            <div class="tabs">
+                <button class="tab active">All Partners</button>
+                <button class="tab">Pending (7)</button>
+                <button class="tab">Active</button>
+                <button class="tab">Deactivated</button>
+            </div>
 
-         <div class="top-bar">
-          <div class="tabs">
-             <button class="active">All Partners</button>
-             <button>Pending (7)</button>
-             <button>Active</button>
-             <button>Deactivated</button>
-          </div>
-        <div class="nav-box">
-                      <div class="input-wrapper" >
-                       <i class="ph ph-magnifying-glass"></i>
-                       <input 
-                       type="text"
-                       class="search-input"
-                       placeholder="search organisations"/>
-                     </div>
-    </div>
-
-    <div class="table-card">
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Organisation Name</th>
-                    <th>Contact</th>
-                    <th>Location</th>
-                    <th>Status</th>
-                    <th>Joined Date</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>
-                        <h4>EcoCycle Nigeria</h4>
-                        <h6>info@ecycle.ng</h6>
-                    </td>
-
-                    <td>0803 123 4567</td>
-
-                    <td>Lagos Mainland</td>
-
-                    <td>
-                        <span class="badge pending">
-                            Pending
-                        </span>
-                    </td>
-
-                    <td>May 18, 2006</td>
-
-                    <td>
-                        <button class="btn">Review</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h4>Green Earth Ltd</h4>
-                        <h6>contact@greenearth.com</h6>
-                    </td>
-
-                    <td>0806 254 5476</td>
-
-                    <td>Abuja</td>
-
-                    <td>
-                        <span class="badge active-status">
-                            Active
-                        </span>
-                    </td>
-
-                    <td>May 10, 2006</td>
-
-                    <td>
-                        <button class="btn">View</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h4>Reclaim Resources</h4>
-                        <h6>hello@reclaim.com</h6>
-                    </td>
-
-                    <td>0812 345 6789</td>
-
-                    <td>Port Harcourt</td>
-
-                    <td>
-                        <span class="badge active-status">
-                            Active
-                        </span>
-                    </td>
-
-                    <td>May 5, 2006</td>
-
-                    <td>
-                        <button class="btn">View</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h4>Waste2Worth</h4>
-                        <h6>info@waste2worth.com</h6>
-                    </td>
-
-                    <td>0815 456 7890</td>
-
-                    <td>Ibadan</td>
-
-                    <td>
-                      <span class="badge deactivated">Deactivated</span>
-                    </td>
-                    <td>Apr 28, 2006</td>
-                    <td>
-                        <button class="btn">View</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4>Pure Recyclers</h4>
-                        <h6>admin@purerecyclers.com</h6>
-                    </td>
-
-                    <td>0900 567 8001</td>
-
-                    <td>Kano</td>
-
-                    <td>
-                        <span class="badge active-status">
-                            Active
-                        </span>
-                    </td>
-
-                    <td>Apil 20, 2006</td>
-
-                    <td>
-                        <button class="btn">View</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4>Green Legacy</h4>
-                        <h6>Legacy@gbcollect.com</h6>
-                    </td>
-
-                    <td>0803 123 4567</td>
-
-                    <td>Ogun</td>
-
-                    <td>
-                        <span class="badge pending">
-                            pending
-                        </span>
-                    </td>
-
-                    <td>May 10, 2006</td>
-
-                    <td>
-                        <button class="btn">View</button>
-                    </td>
-                </tr>
-
-
-            </tbody>
-        </table>
-
-    </div>
-
-    <div class="footer">
-
-        <p>Showing 1 to 5 of 124 partners</p>
-
-        <div class="pagination">
-            <span>&lt;</span>
-            <span class="current">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&gt;</span>
+            <div class="search-box">
+                <img src="icons/Search-icon.svg" alt="search-icon" class="search-icon">
+                <input type="text" placeholder="Search Organisations...">
+            </div>
         </div>
-    </div>
+
+        <!-- Table Card -->
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partner Name</th>
+                        <th>Contact</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Joined Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>
+                           <div class="partner-info">
+                                <h4>EcoCycle Nigeria</h4>
+                                <p>info@ecycle.ng</p>
+                           </div>
+                        </td>
+
+                        <td>08031234567</td>
+                        <td>Lagos Mainland</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 18, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2-->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Green Earth Ltd</h4>
+                                <p>contact@greenearth.com</p>
+                            </div>
+                        </td>
+                        <td>08062845476</td>
+                        <td>Abuja</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Reclaim Resources</h4>
+                                <p>Hello@reclaim.com</p>      
+                            </div>
+                        </td>
+                        <td>08123456789</td>
+                        <td>Port Harcourt</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 5,2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Waste2Worth</h4>
+                                <p>info@waste2worth.com</p>
+                            </div>
+                        </td>
+                        <td>08154567890</td>
+                        <td>Ibadan</td>
+                        <td>
+                            <span class="status deactivated">Deactivated</span>
+                        </td>
+                        <td>Apr 28, 2006</td>
+                        <td>
+                            <button class="action-btn">Activate</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Pure Recyclers</h4>
+                                <p>adim@purerecyclers.com</p>    
+                            </div>
+                        </td>
+                        <td>09005678001</td>
+                        <td>Kano</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>Apr 20, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 6 -->
+
+                    <tr>
+                        <td>
+                            <div class="partner-info">
+                                <h4>Green Legacy</h4>
+                                <p>legacy@gbcollect.com</p> 
+                            </div>
+                        </td>
+                        <td>08031234567</td>
+                        <td>Ogun</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer -->
+
+            <div class="table-footer">
+                <p>Showing 1 to 5 of 124 partners</p>
+
+                <div class="pagination">
+                    <button>
+                        <img src="icons/Arrow-1.svg"> 
+                    </button>
+                    <button class="page active-page">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button class="page">4</button>
+                    <button>
+                         <img src="icons/Arrow-2.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
     </div>
 
-     <script src="../components/include.js"></script>
+    <script src="../components/include.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
