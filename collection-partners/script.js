@@ -148,9 +148,7 @@ paginationButtons.forEach(btn => {
 
 });
 
-// ===========================
 // SEARCH WITH ENTER
-// ===========================
 
 searchInput.addEventListener("keypress", e => {
 
@@ -162,9 +160,7 @@ searchInput.addEventListener("keypress", e => {
 
 });
 
-// ===========================
 // ROW HOVER EFFECT
-// ===========================
 
 rows.forEach(row => {
 
@@ -176,9 +172,7 @@ rows.forEach(row => {
 
 });
 
-// ===========================
 // PAGE LOADED
-// ===========================
 
 window.addEventListener("load", () => {
 
