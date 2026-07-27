@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+.login-page{
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-left{ 
+    background-image: url(logo2/bg\ image.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 656px;
+    height: 100vh;
+}
+
+.login-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 120px;
+}
+
+.login-left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logo{
+    width: 317px;
+    height: 70px;
+    margin-top: 90px;
+    margin-left: 104px;
+}
+
+.welcome-text{
+    margin-left: 104px;
+    gap: 12px;
+}
+
+.welcome-text h1{
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+}
+
+.welcome-text .highlighted{
+   color:  #38B26C;
+}
+
+.welcome-text p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.trust-badges{
+    display: flex;
+    justify-content: space-between;
+    background: #103F2F8A;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.badge{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+}
+
+.badge img{
+    width: 31.85px;
+    height: 31.85px;
+    margin-left: 15px;
+}
+
+.badge strong{
+    display: block;
+    font-weight: 700;
+    font-size: 13.43px;
+    color: #F8FAFB;
+}
+
+.badge p{
+    font-weight: 400;
+    font-size: 10.06px;
+    color: #CBF4DC;
+}
+
+.language-selector{
+position: absolute;
+top: 45px;
+right: 45px;
+}
+
+.lang-badge{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 2px solid #E5EAF0;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+}
+
+.lang-badge:hover{
+    background: #F9FAFB;
+    transition: background 0.2s ease;
+}
+
+.lang-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.chevron-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.lang-badge span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.login-form{
+    width: 487px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.login-form h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+   
+   
+}
+
+.form-subheading{
+    font-weight: 400;
+    font-size: 15px;
+    color: #8A9A94;
+   
+    /* margin-bottom: 24px; */
+}
+
+.form-group{
+   
+    /* margin-bottom: 20px; */
+}
+
+.form-group label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    /* margin-bottom: 6px; */
+}
+
+.form-group div{
+    display: flex;
+    align-items: center;
+    border: 2px solid #E5EAF0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    gap: 10px;
+}
+
+.form-group img{
+    width: 24px;
+    height: 24px;
+}
+
+.form-group input{
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    gap: 12px;
+}
+
+.checkbox-label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+
+.forgot-link{
+    text-decoration: none;
+    color:  #1A1A1A;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.btn-signin{
+    width: 100%;
+    padding: 12px;
+    background-color: #38B26C;
+    color: #F8FAFB;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-signin:hover{
+    background: #2F9960; 
+    transition: background 0.3s ease;
+}
+
+.divider{
+    display: flex;        
+    align-items: center;
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.divider::before,
+.divider::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.divider span{
+    padding: 0 10px;
+}
+
+.btn-sso{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight:400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-sso:hover{
+    background: #F9FAFB; 
+    border-color: #B0B7C1;
+    transition: all 0.2s ease;
+}
+
+.footer-text{
+    font-size: 12px;
+    color: #8A9A94;
+    padding-top: 10px;
+}
