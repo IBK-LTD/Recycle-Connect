@@ -29,22 +29,49 @@
 
                 <div class="profile-card-body">
                     <div class="profile-photo">
-                        <img src="../settings/icon/set.png" alt="profile-photo">
-                        <button class="change-photo-btn">
-                            <img src="../settings/icon/Vector (2).svg" alt="arrow">
+                        <img src="../settings/icon/set.png" alt="profile-photo" id="profilePreview">
+                        <button class="change-photo-btn" id="changePhotoBtn">
+                            <img src="../settings/icon/Vector (2).svg" alt="arrow" class="vector">
                         </button>
+                        <input type="file" id="photoInput" accept="image/jpeg,image/png,image/gif" hidden>
                         <p>Change Photo <span class="change-photo-hint">JPG, PNG or GIF Max size of 2MB</span></p> 
                     </div>
 
-                    <div></div>
+                    <div class="profile-form">
+                        <div class="profile-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" value="Tolani Emma" readonly>
+                        </div>
+                        
+                        <div class="profile-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" value=" tolaniemma@gmail.com" readonly>
+                        </div>
 
+                        <div class="profile-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" value="+234 801 234 5678" readonly>
+                        </div>
+
+                        <div class="profile-group">
+                            <label for="role">Role</label>
+                            <input type="text" id="role" value="Administrator" readonly>
+                        </div>
+                
+                    </div>
 
                 </div>
+
+                <div class="profile-card-footer">
+                        <button class="save-btn">Save Changes</button>
+                    </div>
             </div>
         </section>
     </main>
     </div>
     
     <script src="../components/include.js"></script>
+
+    <script src="../settings/script.js"></script>
 </body>
 </html>
