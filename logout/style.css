@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter",sans-serif;
+}
+
+.logout-page{
+    display: flex;
+    height: 100vh;
+}
+
+.logout-image{
+    flex: 1;
+}
+
+.logout-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logout-panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.logout-panel h1{
+    font-size: 24px;
+    max-width: 420px;
+    margin-bottom: 16px;
+}
+
+.highlight{
+    color: #38B26C;
+}
+
+.logout-panel p{
+    color: #8A9A94;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.signin-btn{
+    background: #38B26C;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 280px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.return-btn{
+    background: #fff;
+    border: 1px solid #E5EAF0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 280px;
+    cursor: pointer;
+}
+
+.return-btn a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.footer-text{
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #8A9A94;
+}
