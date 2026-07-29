@@ -19,11 +19,149 @@
   <div class="main-content">
     <div id="topbar-placeholder"></div>
 
-    <main>
-        <!-- start your wwork here -->
-    </main>
+      <main>
+        <!-- Top Navigation -->
+        <div class="top-bar">
+
+            <div class="tabs">
+                <button class="tab active">All Households</button>
+                <button class="tab">Pending</button>
+                <button class="tab">Active</button>
+                <button class="tab">Inactive</button>
+            </div>
+
+            <div class="search-box">
+                <img src="icons/Search-icon.svg" alt="search-icon" class="search-icon">
+                <input type="text" placeholder="Search Organisations...">
+            </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Joined Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>Chioma Okafor</td>
+                        <td>08031234567</td>
+                        <td>Lagos Mainland</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 18, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2-->
+                    <tr>
+                        <td>Adewale Johnson</td>
+                        <td>08062845476</td>
+                        <td>Abuja</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>Maryann Yusuf</td>
+                        <td>08123456789</td>
+                        <td>Port Harcourt</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>May 5,2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>Emeka Nnaji</td>
+                        <td>08154567890</td>
+                        <td>Ibadan</td>
+                        <td>
+                            <span class="status inactive">Inactive</span>
+                        </td>
+                        <td>Apr 28, 2006</td>
+                        <td>
+                            <button class="action-btn">Activate</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>Grace Adebayo</td>
+                        <td>09005678001</td>
+                        <td>Kano</td>
+                        <td>
+                            <span class="status active-status">Active</span>
+                        </td>
+                        <td>Apr 20, 2006</td>
+                        <td>
+                            <button class="action-btn">View</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 6 -->
+
+                    <tr>
+                        <td>Yusuf Lawal</td>
+                        <td>08031234567</td>
+                        <td>Ogun</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>May 10, 2006</td>
+                        <td>
+                            <button class="action-btn">Review</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer -->
+
+            <div class="table-footer">
+                <p>Showing 1 to 5 of 1,245 partners</p>
+
+                <div class="pagination">
+                    <button>
+                        <img src="icons/Arrow-1.svg"> 
+                    </button>
+                    <button class="page active-page">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button class="page">4</button>
+                    <button>
+                         <img src="icons/Arrow-2.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+      </main>
+    
     </div>
     
     <script src="../components/include.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
