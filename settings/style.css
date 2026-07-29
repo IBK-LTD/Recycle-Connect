@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter", sans-serif;
+}
+
+.profile-card{
+    background: #FFFFFF;
+    border: 1px solid #E5EAF0;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-right: 50px;
+    padding: 38px 25px 20px 28px;
+}
+
+.profile-card-header h2{
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.profile-card-header p{
+    font-size: 10px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.profile-card-body{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-photo{
+    position: relative;
+    width: 90px;
+    text-align: center;
+}
+
+.profile-photo img{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.change-photo-btn  .vector{
+    width: 19px;
+    height: 19px;
+}
+
+.change-photo-btn{
+    position: absolute;
+    top: 62px;
+    left: 62px;
+    
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #E5EAF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-photo p{
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 12px;
+    color: #000;
+}
+
+.change-photo-hint{
+    font-size: 8px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.profile-form{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+}
+
+.profile-group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.profile-group label{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.profile-group input{
+    padding: 15px 14px;
+    border: 1px solid #E5EAF0;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.profile-group input:focus{
+    outline: none;
+    border-color: #16A34A;
+}
+
+.profile-card-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+.save-btn{
+    background: #38B26C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn:hover{
+    background: #15803D;
+}
