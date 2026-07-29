@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter' sans-serif;
+}
+.tab-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    
+
+}
+.tabs{
+    display: flex;
+    gap: 30px;
+    background-color: white;   
+}
+.tab:hover{
+    color: #38B26C;
+}
+.tab.active{
+    color: #38B26C;
+    border-bottom: 2px solid #38B26C;
+}
+.tab{
+    border: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: white;
+}
+
+
+
+  
+.input{
+    display: flex;
+    gap: 10px;
+    width: 331px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 30px;
+    border: 2px solid #e5e7eb;
+    padding: 0 18px;
+}
+i{
+    height: 20px;
+    width: 20px;
+    color: #9ca3af;
+    align-self: center;
+}
+.search{
+    color: black;
+    outline: none;
+    border: transparent;
+    align-items: center;
+
+}
+
+.tables{
+    overflow-x: auto;
+    width: 978px;
+}
+table{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #F1F3F4;
+    border-radius: 10px 10px;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+thead {
+    height: 46px;
+    font-weight: 400;
+    font-size: 10px;
+    background-color:#F1F3F4 ;
+    text-align: center;
+    border-radius: 10px;
+
+}
+tbody{
+    height: 465px;
+}
+
+
+
+tr td{
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    border-bottom: 2px solid #F1F3F4;
+    width: 65px;
+}
+
+
+tr button{
+    padding: 2px 10px 2px 10px;
+    border-radius: 6px;
+    border: 2px solid #F8FAFB;
+    color: #38B26C;
+}
+span.pending{
+    padding: 2px 10px 2px 10px;
+    color: #BA8607;
+    background-color: #FAE9C0;
+    border-radius: 6px;
+}
+span.active{
+    padding: 2px 10px 2px 10px;
+    color:#38B26C;
+    background-color: #CBF4DC;
+    border-radius: 6px;
+}
+span.inactive{
+    padding:10px 2px 10px 2px ;
+    background-color: #E5EAF0;
+    border-radius: 6px;
+}
+.table-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 37px;
+    font-weight: 400px;
+    font-size: 10px;
+}
