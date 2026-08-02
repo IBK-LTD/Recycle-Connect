@@ -20,10 +20,179 @@
   <div class="main-content">
     <div id="topbar-placeholder"></div>
 
-    <main></main>
+    <main>
+        <section class="order-details">
+
+           <div class="order-header">
+    <div class="order-header-left">
+        <div class="badge-row">
+            <span class="badge badge-approved">
+                <img src="../orders/assets/Container (5).svg" alt="approved icon">
+                Approved
+            </span>
+            <span class="badge badge-reserved">Reserved Status</span>
+        </div>
+
+        <h1 class="order-id">Order ID #EC-9921</h1>
+        <p class="order-meta">Reservation initiated on Oct 26, 2023, 09:12 AM</p>
+    </div>
+
+    <div class="countdown-card">
+        <p class="countdown-card-label">
+            <img src="../orders/assets/Container (6).svg" alt="clock icon">
+            RESERVATION EXPIRES IN:
+        </p>
+        <p class="countdown-card-timer" id="countdown-timer" data-expires="2026-12-31T23:59:00">23h 45m 11s</p>
+    </div>
+</div>
+
+<div class="order-grid">
+
+    <div class="order-col order-col-left">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Secure Reservation</h2>
+
+                <button class="icon-btn" type="button" aria-label="view receipt">
+                    <img src="../orders/assets/Container (7).svg" alt="">
+                </button>
+            </div>
+
+            <div class="fee-row">
+                <span>Collection Fee</span>
+                <span class="price">₦ 12,500.00</span>
+            </div>
+
+            <div class="fee-row">
+                <span>Service Charge</span>
+                <span class="price">₦ 850.00</span>
+            </div>
+
+            <div class="fee-row fee-row-total">
+                <span>Total Payable</span>
+                <span class="price1">₦ 13,350.00</span>
+            </div>
+
+            <button class="btn btn-primary" type="button" id="pay-btn">
+                Pay via Paystack
+                <img src="../orders/assets/Container (8).svg">
+            </button>
+
+            <button class="btn btn-cancel" type="button" id="cancel-btn">
+                <img src="../orders/assets/Container (9).svg">
+                Cancel Reservation
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Collection Hub: Lagos West Central</h2>
+                    <p class="hub-address">
+                        <img src="../orders/assets/Icon.svg" alt="location">
+                        Plot 14, Industrial Way, Ikeja, Lagos State
+                    </p>
+                </div>
+                <button type="button" class="btn btn-ghost" id="directions-btn">
+                    <img src="../orders/assets/Icon (1).svg" alt="">
+                    Get Directions
+                </button>
+            </div>
+
+            <div class="hub-body">
+                <div class="hub-instructtions">
+                    <p class="hub-instructions-label">Instruction for Arrival</p>
+                    <ol class="steps">
+                        <li>
+                            <span class="steps-num">1</span>
+                            Present Order ID #EC-9921 at Gate 2 security entrance.
+                        </li>
+
+                        <li>
+                            <span class="steps-num">2</span>
+                            Proceed to Weighbridge Alpha for initial tare measurement.
+                        </li>
+
+                        <li>
+                            <span class="steps-num">3</span>
+                            Unload material at Bay 04 as directed by the site marshal.
+                        </li>
+                    </ol>
+                </div>
+                <div class="hub-map">
+                    <!-- <img src="../orders/assets/Background.svg" alt="Map to collection"> -->
+                    <!-- <span class="hub-map-pin">
+                        <img src="../orders/assets/Icon (2).svg" alt="map pin">
+                    </span> -->
+
+                    <iframe
+        src="https://www.google.com/maps?q=Plot+14,+Industrial+Way,+Ikeja,+Lagos+State&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="order-col order-col-right">
+        <div class="card1">
+            <p class="card-eyebrow">MATERIAL MANIFEST</p>
+
+            <div class="material-head">
+                <span class="material-icon">
+                    <img src="../orders/assets/Container (10).svg" alt="">
+                </span>
+                <div>
+                    <p class="material-title">Industrial PET Mix</p>
+                    <p class="material-sub">Grade A - Post Industrial</p>
+                </div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-box">
+                    <p class="stat-box-label">Weight</p>
+                    <p class="stat-box-value">4.2<span>t</span></p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-box-label">Moisture</p>
+                    <p class="stat-box-value">&lt;2<span>%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-dark">
+    <h2 class="card-title card-title-light">Logistics Assistant</h2>
+    <p class="logistics-text">
+        Need help with transportation? Our logistics partners can assist with moving your 4.2t of PET material to the Ikeja hub.
+    </p>
+    <button class="btn btn-light" type="button" id="book-transport-btn">
+        Book Transportation
+        <img src="../orders/assets/Container (11).svg" alt="">
+    </button>
+</div>
+
+
+    </div>
+
+</div>
+
+
+        </section>
+
+
+    </main>
     </div>
 
 
     <script src="../component2/share.js"></script>
+
+    <script src="../orders/script.js"></script>
 </body>
 </html>
