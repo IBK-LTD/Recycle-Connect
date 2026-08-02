@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitory</title>
+    <title>History</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +20,389 @@
   <div class="main-content">
     <div id="topbar-placeholder"></div>
 
-    <main></main>
+    <main>
+
+        <!-- PURCHASE HISTORY SECTION -->
+
+        <div class="purchase-history">
+
+        <!-- Header -->
+        <div class="purchase-header">
+
+            <div class="header-text">
+                <h1>Purchase History</h1>
+                <p>
+                   Comprehensive record of all material acquisitions and procurement transactions.
+                   <br>
+                   Monitor your sustainability spend and material diversification over time.
+                </p>
+            </div>
+            <button class="download-report-btn">
+               <img src="icons/Download.svg">
+                Download Report
+            </button>
+        </div>
+
+        <!-- Statistics Cards -->
+
+        <div class="stats-cards">
+
+            <!-- Card 1 -->
+
+            <div class="stat-card">
+                <div class="card-top">
+                    <span class="card-title">LIFETIME MATERIAL RECYCLED</span>
+                    <div class="card-icon recycle-icon">
+                       <img src="icons/Cycle.svg">
+                    </div>
+                </div>
+                <h2>142,850 <span> kg </span> </h2>
+                <div class="card-footer positive">
+                    <img src="icons/Arrow trend-up.svg">
+                    <span>12% from last quarter</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="stat-card">
+                <div class="card-top">
+                    <span class="card-title">TOTAL SUSTAINABILITY SPEND</span>
+                    <div class="card-icon money-icon">
+                       <img src="icons/Money.svg">
+                    </div>
+                </div>
+                <h2>₦342,190.00</h2>
+                <div class="card-footer average">
+                   <img src="icons/Info.svg">
+                   <span>Avg $2.40 / kg</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="stat-card">
+                <div class="card-top">
+                    <span class="card-title">COMPLETED ORDERS</span>
+                    <div class="card-icon settings-icon">
+                       <img src="icons/Good.svg">
+                    </div>
+                </div>
+                <h2>842</h2>
+                <div class="card-footer success">
+                   <img src="icons/Good-2.svg">
+                   <span>98% completion rate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+
+        <div class="purchase-filters">
+
+            <!-- Total Material Button -->
+            <button class="material-btn">
+               <img src="icons/Cycle-2.svg">
+               Total Materials Recycled:
+               <span>7,830.50 kg</span>
+               <img src="icons/Thick arrow down.svg">
+            </button>
+
+            <!-- Search -->
+            <button class="search-btn">
+                <img src="icons/Search-icon.svg">
+            </button>
+
+            <!-- Status Dropdown -->
+            <div class="filter-select">
+                <select>
+                    <option>In Transit (1)</option>
+                    <option>Completed</option>
+                    <option>Declined</option>
+                    <option>Expired</option>
+                </select>
+            </div>
+
+            <!-- Date Picker -->
+
+            <div class="date-picker">
+               <img src="icons/Calendar.svg">
+               <span> Oct 1, 2023 - Oct 31, 2023</span>
+            </div>
+
+            <!-- Right Icons -->
+
+            <div class="filter-icons">
+                <button>
+                   <img src="icons/Dash.svg">
+                </button>
+                <button>
+                   <img src="icons/Dots.svg">
+                </button>
+            </div>
+        </div>
+
+        <!-- PURCHASE HISTORY TABLE -->
+
+        <div class="purchase-table-container">
+
+            <table class="purchase-table">
+                <thead>
+                    <tr>
+                       <th>Order ID</th>
+                       <th>Date</th>
+                       <th>Material</th>
+                       <th>Quantity (kg)</th>
+                       <th>Total Amount</th>
+                       <th>Status</th>
+                       <th>Est. Delivery</th>
+                       <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                   <!-- Row 1 -->
+                    <tr>
+                        <td class="order-id">#EC-8842</td>
+                        <td>Oct 28,<br>2023</td>
+                        <td>
+                            <div class="material">
+                                <div class="material-icon pet">
+                                   <img src="icons/Plastic.svg">
+                                </div>
+                                <span>PET Plastic</span>
+                            </div>
+                        </td>
+                        <td>1,240.00</td>
+                        <td>₦22,976.00</td>
+                        <td>
+                            <span class="status transit">In Transit</span>
+                        </td>
+                        <td>
+                            <span class="delivery live">
+                               <img src="icons/clock.svg">
+                               In 2h 15m
+                            </span>
+                        </td>
+                        <td>
+                            <div class="table-actions">
+                                <button class="track-btn">
+                                   <img src="icons/shipment.svg">
+                                   Track
+                                </button>
+                                <button class="invoice-btn">
+                                   <img src="icons/Download.svg">
+                                   Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                <!-- Row 2 -->
+
+                    <tr>
+                        <td class="order-id">#EC-8841</td>
+                        <td>Oct 26,<br>2023</td>
+                        <td>
+                            <div class="material">
+                                <div class="material-icon iron">
+                                   <img src="icons/Iron scrap.svg">
+                                </div>
+                                <span>Iron Scrap</span>
+                            </div>
+                        </td>
+                        <td>850.50</td>
+                        <td>₦16,530.90</td>
+                        <td>
+                            <span class="status completed">Completed</span>
+                        </td>
+                        <td>
+                            <span class="delivery arriving">
+                               <img src="icons/shipment.svg">
+                               Arriving in 3 days
+                            </span>
+                        </td>
+                        <td>
+                            <div class="table-actions">
+                                <button class="track-btn">
+                                   <img src="icons/shipment.svg">
+                                   Track
+                                </button>
+                                <button class="invoice-btn">
+                                   <img src="icons/Download.svg">
+                                   Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+
+                    <tr>
+                        <td class="order-id">#EC-8839</td>
+                        <td>Oct 24,<br>2023</td>
+                        <td>
+                            <div class="material">
+                                <div class="material-icon cardboard">
+                                   <img src="icons/Cardboard.svg">
+                                </div>
+                                <span>Corrugated Cardboard</span>
+                            </div>
+                        </td>
+                        <td>3,100.00</td>
+                        <td>₦125,465.00</td>
+                        <td>
+                            <span class="status expired">Expired</span>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="table-actions">
+                                <button class="invoice-btn">
+                                   <img src="icons/Download.svg">
+                                   Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+
+                    <tr>
+                       <td class="order-id">#EC-8835</td>
+                       <td>Oct 21,<br>2023</td>
+                       <td>
+                            <div class="material">
+                                <div class="material-icon glass">
+                                   <img src="icons/Glass.svg">
+                                </div>
+                                <span>Mixed Glass</span>
+                            </div>
+                        </td>
+                        <td>540.00</td>
+                        <td>₦108,000.00</td>
+                        <td>
+                            <span class="status declined">Declined</span>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <div class="table-actions">
+                                <button class="invoice-btn">
+                                   <img src="icons/Download.svg">
+                                   Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+
+                    <tr>
+                        <td class="order-id">#EC-8830</td>
+                        <td>Oct 18,<br>2023</td>
+                        <td>
+                            <div class="material">
+                                <div class="material-icon hdpe">
+                                   <img src="icons/Plastic.svg">
+                                </div>
+                                <span>HDPE Plastic</span>
+                            </div>
+                        </td>
+                        <td>2,100.00</td>
+                        <td>₦49,830.00</td>
+                        <td>
+                            <span class="status completed">Completed</span>
+                        </td>
+                        <td>
+                            <span class="delivery delivered">
+                               <img src="icons/Good-2.svg">
+                               Delivered
+                            </span>
+                        </td>
+                        <td>
+                            <div class="table-actions">
+                                <button class="track-btn">
+                                   <img src="icons/shipment.svg">
+                                   Track
+                                </button>
+                                <button class="invoice-btn">
+                                   <img src="icons/Download.svg">
+                                   Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- TABLE FOOTER -->
+
+        <div class="table-footer">
+            <div class="table-info">
+                Showing 5 of 142 collection hub listings
+            </div>
+            <div class="pagination">
+                <button class="page-btn prev">
+                   <img src="icons/Arrow-1.svg">
+                </button>
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">24</button>
+                <button class="page-btn next">
+                   <img src="icons/Arrow-2.svg">
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Bottom Cards -->
+    
+        <div class="bottom-cards">
+
+            <!-- Recycling Impact Summary -->
+            <div class="impact-card">
+                <h3>Recycling Impact Summary</h3>
+                <p>Estimated Carbon Offset</p>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-value">248.51 tCO₂e</span>
+                </div>
+                <small>
+                   You have offset 72% of your facility's operational carbon
+                   footprint this year through these material acquisitions.
+                </small>
+            </div>
+
+            <!-- Support Card -->
+
+            <div class="support-card">
+                <div class="support-header">
+                    <div class="support-icon">
+                       <img src="icons/contact_support.svg">
+                    </div>
+                    <div>
+                        <h3>Need transaction help?</h3>
+                        <p>Contact your dedicated Sustainability Specialist.</p>
+                    </div>
+                </div>
+                <button class="support-btn">Open Support Channel</button>
+            </div>
+        </div>
+        </div>
+
+    </main>
     </div>
 
 
     <script src="../component2/share.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
