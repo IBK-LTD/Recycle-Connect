@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="../component2/share.css">
 
-    <link rel="stylesheet" href="../dashboard_2/style.css">
+    <link rel="stylesheet" href="../dashboard2/style.css">
 </head>
 <body>
     <div id="sidebar-placeholder"></div>
@@ -20,10 +20,309 @@
   <div class="main-content">
     <div id="topbar-placeholder"></div>
 
-    <main></main>
+    <main>
+    
+        <!-- GREETING SECTION -->
+        <section class="greeting">
+           <h2>Good morning, GreenTech Solutions</h2>
+           <p>Here's an overview of your recycling operations today.</p>
+        </section>
+
+
+        <!-- STATISTICS CARDS -->
+        <section class="stats-container">
+
+        <!-- Card 1 -->
+
+        <div class="stat-card">
+            <div class="stat-content">
+                <h4>Total Materials Purchased</h4>
+                <div class="stat-bottom">
+                   <h2 class="counter" data-target="45200">45,200<span>kg</span></h2>
+                    <span class="badge success">↗ 12%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="stat-card">
+            <div class="stat-content">
+                <h4>Active Orders</h4>
+                <div class="stat-bottom">
+                   <h2 class="counter" data-target="3">3</h2>
+                   <span class="badge success">On Track</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="stat-card">
+            <div class="stat-content">          
+                <h4>Pending Requests</h4>
+                <div class="stat-bottom">
+                   <h2 class="counter" data-target="5">5</h2>
+                   <span class="badge danger">Action Req.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="stat-card">
+            <div class="stat-content">
+                <h4>Total Spent</h4>
+                <div class="stat-bottom">
+                   <h2 class="counter" data-target="960400">₦960,400</h2>
+                   <span class="badge neutral">Monthly</span>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+
+        <!-- ANALYTICS SECTION -->
+
+        <section class="analytics-section">
+
+        <!-- Purchase Volume -->
+
+        <div class="purchase-volume">
+            <div class="card-header">
+                <div>
+                    <h3>Purchase Volume</h3>
+                    <p>Distribution by material category</p>
+                </div>
+                <select class="chart-filter">
+                    <option>This Month</option>
+                    <option>Last Month</option>
+                    <option>This Year</option>
+                </select>
+            </div>
+
+            <!-- Chart Area -->
+
+            <div class="chart-container">
+                
+                <div class="chart-bars">
+                    <div class="bar-group">
+                        <div class="bar plastic"></div> 
+                        <div class="bar-label">
+                            <img src="icons/Background.svg" alt="">
+                            <span>Plastic</span>
+                        </div>                 
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar paper"></div>
+                        <div class="bar-label">
+                            <img src="icons/Background.svg" alt="">
+                            <span>Paper</span>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar metal"></div>
+                        <div class="bar-label">
+                            <img src="icons/Background(1).svg">
+                            <span>Metal</span>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar glass"></div>
+                        <div class="bar-label">
+                            <img src="icons/Background(2).svg">
+                            <span>Glass</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENT ACTIVITY -->
+    
+
+        <div class="recent-activity">
+            <div class="card-header">
+               <h3>Recent Activity</h3>
+               <a href="#" class="view-all">View All</a>
+            </div>
+
+            <div class="activity-list">
+
+                <!-- Activity 1 -->
+
+                <div class="activity-item">
+                    <div class="activity-icon success">
+                       <img src="icons/success.svg" successful>
+                    </div>
+                    <div class="activity-details">
+                       <h4>Order #ORD-8821 was delivered</h4>
+                       <p>24 mins ago • Plastic Grade-A</p>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+
+                <div class="activity-item">
+                    <div class="activity-icon progress">
+                        <img src="icons/shipment.svg" alt="shipment">
+                    </div>
+                    <div class="activity-details">
+                       <h4>Shipment dispatched from Hub B</h4>
+                       <p>2 hours ago • Cardboard/Paper</p>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+
+                <div class="activity-item">
+                    <div class="activity-icon warning">
+                       <img src="icons/list.svg" alt="list">
+                    </div>
+                    <div class="activity-details">
+                       <h4>New collection request from Client X</h4>
+                       <p>5 hours ago • Mixed Metals</p>
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+
+                <div class="activity-item">
+                    <div class="activity-icon invoice">
+                       <img src="icons/invoice.svg" alt="Invoice">
+                    </div>
+                    <div class="activity-details">
+                       <h4>Invoice INV-92 generated</h4>
+                       <p>Yesterday • ₦2,450.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+
+        <!-- INVENTORY MANAGEMENT -->
+
+
+        <section class="inventory-section">
+            <div class="inventory-header">
+               <h2>Inventory Management</h2>
+               <div class="inventory-actions">
+                    <button class="filter-btn">Filter</button>
+                    <button class="export-btn">Export Report</button>
+                </div>
+            </div>
+
+            <div class="table-card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>MATERIAL TYPE</th>
+                        <th>CURRENT STOCK</th>
+                        <th>STATUS</th>
+                        <th>LAST DELIVERY</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>
+                            <div class="material-info">
+                                <img src="icons/waste-container.svg" alt="waste-container">
+                                <div>
+                                    <h4>PET Plastics</h4>
+                                    <span>High-density Pellets</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>12,400 kg</td>
+                        <td>
+                            <span class="status optimal"> Optimal</span>
+                        </td>
+                        <td>Oct 24, 2023</td>
+                        <td>
+                            <button class="details-btn">
+                                Details
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2 -->
+
+                    <tr>
+                        <td>
+                            <div class="material-info">
+                                <img src="icons/waste-container.svg" alt="waste-container">
+                                <div>
+                                   <h4>Aluminum Cans</h4>
+                                   <span>Compressed Bales</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>3,200 kg</td>
+                        <td>
+                            <span class="status low-stock">Low Stock</span>
+                        </td>
+                        <td>Oct 20, 2023</td>
+                        <td>
+                            <button class="order-btn">Order More</button>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>
+                            <div class="material-info">
+                                <img src="icons/waste-container.svg" alt="waste-container">
+                                <div>
+                                   <h4>Corrugated Cardboard</h4>
+                                   <span>Post-Consumer Waste</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>22,100 kg</td>
+                        <td>
+                           <span class="status processing">Processing</span>
+                        </td>
+                        <td>Oct 26, 2023</td>
+                        <td>
+                           <button class="details-btn">Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+            <div class="footer-left">
+               <p>
+                   © 2026 RecycleConnect. All rights reserved.
+                   Professional Recycling Operations Suite.
+                </p>
+            </div>
+            <div class="footer-right">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Terms of Service</a>
+               <a href="#">System Status</a>
+            </div>
+        </footer>
+
+    </main>
     </div>
 
 
     <script src="../component2/share.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
