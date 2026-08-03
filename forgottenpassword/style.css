@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F5F7F6;
+}
+
+.forgot-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.forgot-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.forgot-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+.form-subheading {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.form-group input:focus {
+    border-color: #16A34A;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 12px;
+    background-color: #16A34A;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-signin:hover {
+    background-color: #15803D;
+}
+
+.form-message {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.form-message.success {
+    color: #16A34A;
+}
+
+.form-message.error {
+    color: #DC2626;
+}
+
+.dev-token-box {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #F0FDF4;
+    border: 1px dashed #16A34A;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.dev-token-box p {
+    margin-bottom: 6px;
+    color: #166534;
+}
+
+.dev-token-box code {
+    display: block;
+    word-break: break-all;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+}
+
+.btn-copy {
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 1px solid #16A34A;
+    color: #16A34A;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.proceed-link {
+    font-size: 13px;
+    color: #16A34A;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #6B7280;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #374151;
+}
