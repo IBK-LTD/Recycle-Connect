@@ -99,7 +99,7 @@ body{
     margin-left: 260px;
 }
 
-.topbar{
+.topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -152,7 +152,7 @@ body{
     cursor: pointer;
 }
 
-.topbar-action{
+.topbar-action  {
     display: flex;
     align-items: center;
     gap: 50px;
