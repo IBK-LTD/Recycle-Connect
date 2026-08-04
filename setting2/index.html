@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings_2</title>
+    <title>Settings2</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link href="../components/firstbar.html">
+
     <link rel="stylesheet" href="../component2/share.css">
 
     <link rel="stylesheet" href="../setting2/style.css">
@@ -18,106 +18,295 @@
     <div id="sidebar-placeholder"></div>
 
   <div class="main-content">
-    <div id="firstbar-placeholder"></div>
+    <div id="topbar-placeholder"></div>
     <main>
-     <section class="settings-content">
-      <div class="settings-links">
-       <a href="Recycle-Connect\dashboard">Dashboard</a>
-       <img src="../assets/logo2/greater-than.svg" alt="greater than" class="greater-than">
-       <a href="Recycle-Connect\setting2">Settings</a>
-      </div>
-      <div class="settings-header">
-        <h2>Settings</h2>
-        <div class="settings-button">
-          <button class="cancel">Cancel</button>
-          <button class="save-changes">Save Changes</button>
-        </div>
-        </div>
-     </section> 
-     <section class="facility" >
-     <div class="facility-profile">
-      <div class="facility-logo">
-        <img src="../assets/logo2/factory(1).svg" class="factory logo" alt="facility logo">
-        <h2 class="facility-header" >Facility Profile </h2>
-      </div>
-    
-      <div class="facility-form">
-        <datal class="facility-group 1">
-          <label for="facility-name">Company Name</label>
-          <input type="text" id="facility-name" value="GreenTech Solutions" readonly>
-        </datal>
-        <datal class="facility-group 2">
-          <label for="facility-id">Company ID</label>
-          <input type="text" id="facility-id" value="CM-IND-402-B" readonly>
-        </datal>
-        <datal class="facility-group location3">
-          <label for="facility-location">Location</label>
-          <img src="../assets/logo2/map-pin.svg" alt="map pin">          
-          <input class="location" type="text" id="facility-location"  value="Isolo Industrial Estate, Isolo, Lagos" readonly>
-        </datal>
-        <datal class="facility-group 4">
-          <label for="facility-contact">Primary Contact</label>
-          <input type="text" id="facility-contact" value="Tolu Kingsley" readonly>
-        </datal>
-        <datal class="facility-group 5">
-          <label for="facility-email"> Contact Email</label>
-          <input type="text" id="facility-email" value="tolu@recycleconnect.com" readonly>
-      </div>
-     </div>
-     <section class="security-section">
-      <div class="security">
-        <div class="security-logo">
-        <img src="../assets/logo2/shield-checkered.svg" alt="security logo" class="security-logo">
-        <h2 class="security-header">Security</h2>
-        </div>
-        <div class="athentication">
-        <div class="security-athentication">
-          <h3>Two Factor Auth</h3>
-          <p>SMS or Authenticator app</p>
-          </div>
-          <div class="security-button">
-          <label class="switch">
-          <input class="security-button" type="checkbox"></input>
-          <span class="slider"></span>
-          </label>
-          </div>
-        </div>
-        <div class="password">
-          <button class="change-password">Change Password</button>
-          <img src="../assets/logo2/arrow-right.svg" alt="arrow right" class="arrow-right">
-          </div>
-      </div>
-     
-     <div class="alarms">
-      <div class="alarm-logo">
-        <img src="../assets/logo2/bell-ringing.svg" alt="bell">
-        <h3>Alerts</h3>
-      </div>
-      <div class="alarm-info">
-        <div class="materials-info">
-      <p>Materials Alerts</p>
-      <label class="materials">
-        <input type="checkbox" class="materials-button">
-        <span class="materials-slider"></span>
-      </label>
-      </div>
-      <div class="reports-info">
-        <p>Weekly Sustainability Report</p>
-        <label class=reports>
-          <input type="checkbox" class="reports-button">
-          <span class="reports-slider"></span>
-        </label>
-      </div>
-      </div>
-      </div>
-      </section>
-     </section>
+      
+      <!-- SETTINGS PAGE - PART 1 -->
 
+      <div class="settings-page">
+
+        <!-- Breadcrumb -->
+         
+        <div class="breadcrumb">
+          <span>Dashboard</span>
+          <img src="icons/Arrow-right-white.svg">
+          <span>Settings</span>
+        </div>
+
+        <!-- Page Header -->
+
+        <div class="settings-header">
+          <h1>Settings</h1>
+          <div class="header-buttons">
+            <button class="cancel-btn">Cancel</button>
+            <button class="save-btn">Save Changes</button>
+          </div>
+        </div>
+
+        <!-- Main Grid -->
+
+        <div class="settings-grid">
+
+          <!-- LEFT COLUMN -->
+          <div class="left-column">
+
+            <!-- Facility Profile -->
+            <div class="settings-card facility-card">
+              <div class="card-title">
+                <div class="title-left">
+                  <div class="title-icon">
+                    <img src="icons/Profile.svg">
+                  </div>
+                  <h2>Facility Profile</h2>
+                </div>
+              </div>
+
+              <!-- Row 1 -->
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Company Name</label>
+                  <input type="text"value="GreenTech Solutions">
+                </div>
+
+                <div class="form-group">
+                  <label>Company ID</label>
+                  <input type="text"value="CM-IND-402-B">
+                </div>
+              </div>
+
+              <!-- Location -->
+
+              <div class="form-group full-width">
+                <label>Location</label>
+                <div class="input-icon">
+                  <img src="icons/Location.svg">
+                  <input type="text"value="Isolo Industrial Estate, Isolo, Lagos">
+                </div>
+              </div>
+
+              <!-- Row 2 -->
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Primary Contact</label>
+                  <input type="text"value="Tolu Kingsley">
+                </div>
+
+                <div class="form-group">
+                  <label>Contact Email</label>
+                  <input type="email"value="tolu@recycleconnect.com">
+                </div>
+              </div>
+            </div>
+
+            <!-- End Facility Card -->
+
+          </div>
+          <!-- End Left Column -->
+
+          <!-- RIGHT COLUMN -->
+          <div class="right-column">
+                      
+            <!-- SECURITY CARD -->
+            
+            <div class="settings-card security-card">
+              <div class="card-title">
+                <div class="title-left">
+                  <div class="title-icon">
+                    <img src="icons/Security.svg">
+                  </div>
+                  <h2>Security</h2>
+                </div>
+              </div>
+
+            <!-- Two Factor Authentication -->
+
+            <div class="security-box">
+              <div class="security-info">
+                <h4>Two-Factor Auth</h4>
+                <p>SMS or Authenticator App</p>
+              </div>
+                <label class="switch">
+                  <input type="checkbox"checked id="twoFactorToggle">
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <!-- Change Password -->
+
+              <button class="password-btn">
+                <span>Change Password</span>
+                <img src="icons/Arrow-right.svg">
+              </button>
+            </div>
+
+            <!-- ALERTS CARD -->
+
+            <div class="settings-card alerts-card">
+              <div class="card-title">
+                <div class="title-left">
+                  <div class="title-icon">
+                    <img src="icons/Alerts.svg">
+                  </div>
+                  <h2>Alerts</h2>
+                </div>
+              </div>
+
+              <div class="alert-item">
+                <span>Material Alerts</span>
+                <label class="switch">
+                  <input type="checkbox"checked id="materialAlert">
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="alert-item">
+                <span>Weekly Sustainability Reports</span>
+                <label class="switch">
+                  <input type="checkbox"checked id="weeklyReports">
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="alert-item">
+                <span>Compliance Deadlines</span>
+                <label class="switch">
+                  <input type="checkbox"id="complianceAlert">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Right Column -->
+
+        </div>
+        <!-- End Settings Grid -->
+
+        <!-- TEAM MANAGEMENT -->
+   
+        <div class="settings-card team-card">
+          <div class="team-header">
+            <div class="title-left">
+              <div class="title-icon">
+                <img src="icons/Team.svg">
+              </div>
+              <h2>Team Management</h2>
+            </div>
+            <button class="invite-btn">
+              <img src="icons/Invite.svg">
+              Invite Member
+            </button>
+          </div>
+
+        <!-- Team Table -->
+
+        <table class="team-table">
+          <thead>
+            <tr>
+              <th>MEMBER</th>
+              <th>ROLE</th>
+              <th>STATUS</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <!-- Member 1 -->
+            <tr>
+              <td>
+                <div class="member-info">
+                  <div class="avatar green">AR</div>
+                  <div>
+                    <h4>Uche Sydney</h4>
+                    <p>uche@recycleconnect.com</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>Sustainability Manager</td>
+              <td>
+                <span class="status active">ACTIVE</span>
+              </td>
+              <td>
+                <button class="menu-btn">
+                  <img src="icons/Dots.svg">
+                </button>
+              </td>
+            </tr>
+
+            <!-- Member 2 -->
+            <tr>
+              <td>
+                <div class="member-info">
+                  <div class="avatar green">ML</div>
+                  <div>
+                    <h4>Tolu Kingley</h4>
+                    <p>tolu@recycleconnect.com</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>Logistics Lead</td>
+              <td>
+                <span class="status active">ACTIVE</span>
+              </td>
+              <td>
+                <button class="menu-btn">
+                  <img src="icons/Dots.svg">
+                </button>
+              </td>
+            </tr>
+
+            <!-- Member 3 -->
+            <tr>
+              <td>
+                <div class="member-info">
+                  <div class="avatar gray">JK</div>
+                  <div>
+                    <h4>Jamal Musa</h4>
+                    <p>musa@recycleconnect.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>Material Specialist</td>
+              <td>
+                <span class="status pending"> PENDING</span>
+              </td>
+              <td>
+                <button class="menu-btn">
+                  <img src="icons/Dots.svg">
+                </button>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        </div>
+        <!-- End Team Management Card -->
+
+        <!-- DEACTIVATE FACILITY -->
+
+        <div class="deactivate-section">
+          <div class="deactivate-text">
+            <h4>Deactivate Facility Instance</h4>
+            <p>
+              Permanently remove this company and all its historical
+              tracking data from the dashboard.
+            </p>
+          </div>
+          <button class="deactivate-btn">Deactivate</button>
+        </div>   
+      </div>
+      <!-- End Settings Page -->
 
     </main>
-    </div>
+  </div>
 
-
-    <script src="../setting2/include.js"></script>
+  <script src="../component2/share.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
