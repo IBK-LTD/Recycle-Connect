@@ -15,11 +15,12 @@ body{
 
 .main-content{
     width: 100%;
-    height: 54px;
     padding: 32px 32px 18px 32px;
+    margin-right: 32px;
 }
 .firstbar{
     align-items: center;
+
 }
 .icon-wrapper{
     padding-left:4px;
@@ -87,7 +88,7 @@ body{
     display:flex;
     flex-direction: column;
     gap: 20px;
-    width:835px;
+    width: 989px;
     height: 100%;
     border-radius: 10px;
     border: 2px solid #C1C8C280;
@@ -156,7 +157,7 @@ body{
 .security-section{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 
@@ -169,8 +170,9 @@ body{
 .security{
     border: 1px solid #C1C8C2;
     border-radius: 10px;
-    padding: 25px 25px  84px 25px;
-    width: 255px;
+    padding: 18px 18px 18px 18px;
+    width: 300px;
+    margin-bottom: 20px;
 
 }
 
@@ -178,10 +180,12 @@ body{
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
-    padding: 12px 13px 13px 13px;
+    padding: 18px;
     background:#C1C8C2;
     border-radius: 10px;
     width: 216px;
+    height: 60px;
+    margin-bottom: 5px;
 
 }
 .athentication h3{
@@ -237,12 +241,12 @@ body{
 }
 
 .athentication input:checked + .slider::before{
+    top:4px;
     transform: translateX(26px);
 }
 
 .password{
-    margin-top: 50px;
-    padding: 8px 16px;
+    padding: 8px 16px 0 16px;
     border: 1px solid #717973;
     border-radius: 7px;
     background: white;
@@ -259,12 +263,31 @@ body{
     padding-bottom: 10px;
 }
 
+.alarms{
+   border: 2px solid #C1C8C2; 
+   padding: 18px;
+   border-radius: 7px;
+   width: 300px;
+}
+
 .alarm-logo{
     display: flex;
     gap: 10px;
 }
 .alarm-logo img{
     background-color: #2C694E;
+}
+
+.alarm-info{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding-top: 7px;
+}
+
+.materials-info{
+    display: flex;
+    justify-content: space-between;
 }
 
 .materials input{
@@ -301,7 +324,7 @@ body{
     top: 50%;
     left: 4px;  
     bottom: 4px;
-    Transform: translateY(-50%);
+    transform: translateY(-50%);
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
@@ -313,9 +336,17 @@ body{
 }
 
 .alarms-info input:checked + .materials-slider::before{
-        transform: translateX(26px);
+     top: 4px;   
+    transform: translateX(26px);
 
 }
+
+
+.reports-info{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .reports input{
      width: 0px;
@@ -331,7 +362,7 @@ body{
 
 }
 
-.report-slider{
+.reports-slider{
      position: absolute;
     cursor: pointer;
     top: 0;
@@ -344,17 +375,175 @@ body{
 }
 
 
-.report-slider::before{
+.reports-slider::before{
+    position: absolute;
+    content: "";
+    height: 26px;   
+    width: 26px;
+    top: 50%;
+    left: 4px;  
+    bottom: 4px;
+    transform: translateY(-50%);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+
+.report-info input:checked +.reports-slider{
+     background-color: black;
+   
+}
+
+.report-info input:checked + .reports-slider::before{
+        transform: translateX(26px);
+
+}
+
+.compliance{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.compliance input{
+    width: 0px;
+    height: 0px;
+    opacity: 0px;
+
+}
+.details{
+     display:block;
+    position: relative; 
+    width:60px;
+    height: 34px;
+
+}
+
+.details-slider{
+     position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C1C8C2;
+    transition: 0.4s;
+    border-radius: 34px
+}
+
+.details-slider::before{
     position: absolute;
     content: "";
     height: 26px;
     width: 26px;
-    top: 50%;
-    left: 4px;  
+    right: 4px;
+    top:  50%;  
     bottom: 4px;
     Transform: translateY(-50%);
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
 }
+
+.management{
+    margin-top: 20px;
+    border: 2px solid #C1C8C280;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.team-logo{
+    display:flex;
+    justify-content: space-between;
+}
+.team-logo img{
+    background: #2C694E;
+}
+.team-logo button{
+    background: #2C694E;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.team-management{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.membership-table{
+    width: 1063px
+    
+} 
+
+.table-head th{
+    font-weight: 700;
+    font-size: 11px;
+    border-bottom: 2px solid #C1C8C2;
+    padding: 12px 15px;
+
+
+}
+
+.table-body {
+    text-align: start;
+
+}
+
+.table-data td{
+    padding: 23px 0px 25px 90px ;
+    border-bottom: 1px solid #C1C8C24D;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 400px;
+    color: #414844;
+}
+
+.table-data p{
+    font-size: 9px;
+}
+.table-data td span{
+    display:inline-block;
+    font-weight: 700;
+    font-size: 11px;
+    border-radius: 7px;
+    background-color: #AEEECB;
+    color: #316E52;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.table-data td .pending{
+    background-color:#E8E8E5 ;
+    color: #414844;
+}
+
+.deactivate h4{
+    color: #BA1A1A;
+    font-weight: 700;
+    font-size: 11px;
+}
+.deactivate p{
+    font-weight: 400;
+color: #414844;
+font-size: 11px;
+}
+
+.footer{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    background-color: white;
+    color: #BA1A1A;
+    border: 2px solid #BA1A1A;
+    border-radius: 7px;
+    margin-right: 500px;
 }

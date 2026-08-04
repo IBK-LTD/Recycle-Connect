@@ -1,4 +1,4 @@
-fetch('../components/sidebar.html')
+fetch('../component2/side.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('sidebar-placeholder').innerHTML = html;
