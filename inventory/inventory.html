@@ -20,10 +20,362 @@
   <div class="main-content">
     <div id="topbar-placeholder"></div>
 
-    <main></main>
+    <main>
+        
+        <!-- Inventory Browser Content -->
+
+        <div class="inventory-page">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <span>Dashboard</span>
+                <img src="icons/Arrow-right-white.svg">
+                <span class="active">Inventory Browser</span>
+            </div>
+
+            <!-- Header -->
+            <div class="page-header">
+                <div class="header-left">
+                  <h1>Available Inventory</h1>
+                </div>
+                <div class="header-right">
+                    <button class="export-btn">
+                      <img src="icons/Download.svg">
+                      Export Data
+                    </button>
+                    <button class="refresh-btn">
+                      <img src="icons/Refresh.svg">
+                      Refresh Listings
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search & Filter Section -->
+
+            <div class="filter-container">
+
+                <!-- Search -->
+                <div class="filter-group search-group">
+                    <label>Search Keywords</label>
+                    <div class="input-box">
+                      <img src="icons/Search-icon.svg">
+                      <input type="text"id="searchInput"placeholder="Batch ID, Hub Name...">
+                    </div>
+                </div>
+
+                <!-- Material -->
+                <div class="filter-group">
+                    <label>Material Type</label>
+                    <div class="select-box">
+                        <select id="materialFilter">
+                           <option value="all">All Materials</option>
+                           <option value="PET Plastic">PET Plastic</option>
+                           <option value="Aluminum Can">Aluminum Can</option>
+                           <option value="Corrugated Card">Corrugated Card</option>
+                           <option value="Amber Glass">Amber Glass</option>
+                           <option value="Mixed Iron">Mixed Iron</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="filter-group">
+                    <label>Location (Hub)</label>
+                    <div class="input-box">
+                        <img src="icons/Location.svg">
+                        <input type="text"id="locationInput"placeholder="City or Region">
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="filter-group quantity-group">
+                    <label>Quantity Range (kg)</label>
+                    <div class="quantity-inputs">
+                        <input type="number"id="minQty"placeholder="Min">
+                        <span>-</span>
+                        <input type="number"id="maxQty"placeholder="Max">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inventory Cards Start -->
+
+            <div class="inventory-grid">
+     
+                <!-- Card 1 -->
+                <div class="inventory-card" data-material="PET Plastic" data-location="Isolo" data-quantity="4250">
+                    <div class="card-top">
+                        <div class="product-info">
+                            <div class="product-icon plastic">
+                                <img src="icons/Plastic.svg">
+                            </div>
+                            <div class="product-text">
+                                <h3>PET Plastic</h3>
+                                <p>Grade A Post-Consumer</p>
+                            </div>
+                        </div>
+                        <span class="status-badge in-stock">IN STOCK</span>
+                    </div>
+
+                    <hr>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <small>Quantity</small>
+                            <h2>4,250 <span>kg</span></h2>
+                        </div>
+                        <div class="stat">
+                            <small>Price / kg</small>
+                            <h2 class="price">₦101,246.00</h2>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="card-details">
+                        <p>
+                           <img src="icons/Profile 2.svg">
+                           GreenEco Processing Facility
+                        </p>
+                        <p>
+                           <img src="icons/Location.svg">
+                           Isolo, Lagos
+                        </p>
+                        <p>
+                           <img src="icons/Clock-white.svg">
+                           Last updated 12 mins ago
+                        </p>
+                    </div>
+                    <button class="details-btn">View Details</button>
+                </div>
+
+      
+                <!-- Card 2 -->
+        
+                <div class="inventory-card" data-material="Aluminum Can" data-location="Gbagada" data-quantity="850">
+                    <div class="card-top">
+                        <div class="product-info">
+                            <div class="product-icon aluminum">
+                               <img src="icons/Plastic.svg">
+                            </div>
+                            <div class="product-text">
+                               <h3>Aluminum Can</h3>
+                               <p>Baled & Compacted</p>
+                            </div>
+                        </div>
+                        <span class="status-badge low-stock">LOW STOCK</span>
+                    </div>
+
+                    <hr>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <small>Quantity</small>
+                            <h2>850 <span>kg</span></h2>
+                        </div>
+                        <div class="stat">
+                            <small>Price / kg</small>
+                            <h2 class="price">₦28,850.00</h2>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="card-details">
+                        <p>
+                           <img src="icons/Profile 2.svg">
+                           CleanCity Processing Facility
+                        </p>
+                        <p>
+                           <img src="icons/Location.svg">
+                           Gbagada, Lagos
+                        </p>
+                        <p>
+                            <img src="icons/Clock-white.svg">
+                            Last updated 2 hours ago
+                        </p>
+                    </div>
+
+                    <button class="details-btn">View Details</button>
+                </div>
+
+       
+                <!-- Card 3 -->
+                <div class="inventory-card" data-material="Corrugated Card" data-location="Agege" data-quantity="12400">
+                    <div class="card-top">
+                        <div class="product-info">
+                            <div class="product-icon cardboard">
+                               <img src="icons/Cardboard.svg">
+                            </div>
+                            <div class="product-text">
+                               <h3>Corrugated Card</h3>
+                               <p>OCC Bulk Grade 11</p>
+                            </div>
+                        </div>
+                        <span class="status-badge high-volume">HIGH VOL</span>
+                    </div>
+
+                    <hr>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <small>Quantity</small>
+                            <h2>12,400 <span>kg</span></h2>
+                        </div>
+                        <div class="stat">
+                            <small>Price / kg</small>
+                        <h2 class="price">₦89,650.00</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="card-details">
+                    <p>
+                       <img src="icons/Profile 2.svg">
+                       SouthPort Processing Facility
+                    </p>
+                    <p>
+                       <img src="icons/Location.svg">
+                       Agege, Lagos
+                    </p>
+                    <p>
+                       <img src="icons/Clock-white.svg">
+                       Last updated 45 mins ago
+                    </p>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="inventory-card"data-material="Amber Glass"data-location="Festac"data-quantity="2100">
+                <div class="card-top">
+                    <div class="product-info">
+
+                        <div class="product-icon glass">
+                           <img src="icons/Glass.svg">
+                        </div>
+                        <div class="product-text">
+                           <h3>Amber Glass</h3>
+                           <p>Crushed Cullet</p>
+                        </div>
+                    </div>
+                    <span class="status-badge in-stock">IN STOCK</span>
+                </div>
+
+                <hr>
+
+                <div class="stats-row">
+                    <div class="stat">
+                        <small>Quantity</small>
+                        <h2>2,100 <span>kg</span></h2>
+                    </div>
+                    <div class="stat">
+                       <small>Price / kg</small>
+                       <h2 class="price">₦79,665.00</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="card-details">
+                    <p>
+                       <img src="icons/Profile 2.svg">
+                       Coastal Recycling
+                    </p>
+                    <p>
+                       <img src="icons/Location.svg">
+                       Festac, Lagos
+                    </p>
+                    <p>
+                       <img src="icons/Clock-white.svg">
+                       Last updated 1 day ago
+                    </p>
+                </div>
+                <button class="details-btn">View Details</button>
+
+            </div>
+
+            <!-- Card 5 -->
+     
+            <div class="inventory-card"data-material="Mixed Iron"data-location="Surulere"data-quantity="5600">
+                <div class="card-top">
+                    <div class="product-info">
+                        <div class="product-icon iron">
+                           <img src="icons/Iron scrap.svg">
+                        </div>
+                        <div class="product-text">
+                           <h3>Mixed Iron</h3>
+                           <p>Industrial Scrap</p>
+                        </div>
+                    </div>
+                    <span class="status-badge in-stock">IN STOCK</span>
+                </div>
+                
+                <hr>
+
+                <div class="stats-row">
+                    <div class="stat">
+                       <small>Quantity</small>
+                       <h2>5,600 <span>kg</span></h2>
+                    </div>
+                    <div class="stat">
+                       <small>Price / kg</small>
+                       <h2 class="price">₦99,100.00</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="card-details">
+                    <p>
+                       <img src="icons/Profile 2.svg">
+                       Iron Gate Facility
+                    </p>
+                    <p>
+                       <img src="icons/Location.svg">
+                       Surulere, Lagos
+                    </p>
+                    <p>
+                       <img src="icons/Clock-white.svg">
+                       Last updated 5 mins ago
+                    </p>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <!-- Empty Card -->
+
+            <div class="inventory-card empty-card">
+                <div class="empty-content">
+                   <img src="icons/Open box.svg">
+                   <p>New batches arriving soon...</p>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Footer -->
+
+            <div class="inventory-footer">
+                <div class="listing-count">
+                   Showing 5 of 142 collection hub listings
+                </div>
+                <div class="pagination">
+                    <button class="page-btn">
+                       <img src="icons/Arrow-1.svg">
+                    </button>
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="dots">...</span>
+                    <button class="page-number">24</button>
+                    <button class="page-btn">
+                       <img src="icons/Arrow-2.svg">
+                    </button>
+                </div>  
+            </div>
+
+        </div>
+
+    </main>
     </div>
 
 
     <script src="../component2/share.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
