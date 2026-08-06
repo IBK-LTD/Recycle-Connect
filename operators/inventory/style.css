@@ -47,13 +47,15 @@ body{
 .page-header h1{
     font-size:22px;
     font-weight:700;
-    color:#123524;
+    color: #2C694E;
 }
 
 .header-right{
     display:flex;
     gap:14px;
 }
+
+
 
 /* Buttons */
 
@@ -72,18 +74,18 @@ body{
 }
 
 .export-btn{
-    background:#C1C8C2;
-    border:1px solid #d1d5db;
-    color:#374151;
+    background: #C1C8C2;
+    border:1px solid #F3F4F1;
+    color: darkgreen;
 }
 
 .export-btn:hover{
-    background:#0b5d3d;
+    background: darkgreen;
     color: #fff;
 }
 
 .refresh-btn{
-    background:#0b5d3d;
+    background: darkgreen;
     color:white;
     border:none;
 }
@@ -411,7 +413,7 @@ Status Badge
 }
 
 .details-btn:hover{
-    background:#084c31;
+    background: darkgreen;
     color: #fff;
     transform:translateY(-2px);
 }

@@ -7,7 +7,7 @@ loginForm.addEventListener("submit", (e) => {
   // alert("Login functionality is currently being integrated with the backend. Coming soon!");
 
   // Optional: uncomment below to redirect straight to dashboard for demo purposes
-  window.location.href = "dashboard/dashboard.html";
+  window.location.href = "../admin/dashboard/dashboard.html";
 });
 
 const ssoButton = document.querySelector(".btn-sso");

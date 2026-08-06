@@ -181,7 +181,7 @@
                        <img src="icons/list.svg" alt="list">
                     </div>
                     <div class="activity-details">
-                       <h4>New collection request from Client X</h4>
+                       <h4>New collection request from GreenCycle</h4>
                        <p>5 hours ago • Mixed Metals</p>
                     </div>
                 </div>
@@ -208,99 +208,20 @@
 
         <section class="inventory-section">
             <div class="inventory-header">
-               <h2>Inventory Management</h2>
+               <h2>Recent Purchases</h2>
                <div class="inventory-actions">
-                    <button class="filter-btn">Filter</button>
-                    <button class="export-btn">Export Report</button>
+                    <a href="#" class="view-all">View all</a>
+                    <img src="../dashboard2/icons/Container (12).svg" alt="filter icon">
                 </div>
             </div>
 
-            <div class="table-card">
-
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>MATERIAL TYPE</th>
-                        <th>CURRENT STOCK</th>
-                        <th>STATUS</th>
-                        <th>LAST DELIVERY</th>
-                        <th>ACTION</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <!-- Row 1 -->
-                    <tr>
-                        <td>
-                            <div class="material-info">
-                                <img src="icons/waste-container.svg" alt="waste-container">
-                                <div>
-                                    <h4>PET Plastics</h4>
-                                    <span>High-density Pellets</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>12,400 kg</td>
-                        <td>
-                            <span class="status optimal"> Optimal</span>
-                        </td>
-                        <td>Oct 24, 2023</td>
-                        <td>
-                            <button class="details-btn">
-                                Details
-                            </button>
-                        </td>
-                    </tr>
-
-                    <!-- Row 2 -->
-
-                    <tr>
-                        <td>
-                            <div class="material-info">
-                                <img src="icons/waste-container.svg" alt="waste-container">
-                                <div>
-                                   <h4>Aluminum Cans</h4>
-                                   <span>Compressed Bales</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>3,200 kg</td>
-                        <td>
-                            <span class="status low-stock">Low Stock</span>
-                        </td>
-                        <td>Oct 20, 2023</td>
-                        <td>
-                            <button class="order-btn">Order More</button>
-                        </td>
-                    </tr>
-
-                    <!-- Row 3 -->
-                    <tr>
-                        <td>
-                            <div class="material-info">
-                                <img src="icons/waste-container.svg" alt="waste-container">
-                                <div>
-                                   <h4>Corrugated Cardboard</h4>
-                                   <span>Post-Consumer Waste</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>22,100 kg</td>
-                        <td>
-                           <span class="status processing">Processing</span>
-                        </td>
-                        <td>Oct 26, 2023</td>
-                        <td>
-                           <button class="details-btn">Details</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
+           <div class="purchase-list">
+               <!-- rows injected by JS below -->
+           </div>
 
         </section>
+        
+            <button class="browse-inventory-btn">Browse available inventory</button>
 
         <!-- FOOTER -->
 

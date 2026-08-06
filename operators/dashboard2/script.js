@@ -365,3 +365,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+//FETCH  PURCHASED LIST//
+
+const purchases = [
+  { org: "CleanCycle Abuja", material: "Glass", orderId: "RC-2701", date: "01 Aug 2026, 22:27", weight: "800 kg", price: "₦48,000", status: "awaiting", statusLabel: "Awaiting Partner Confirmation" },
+  { org: "CleanCycle Abuja", material: "Glass", orderId: "RC-4913", date: "01 Aug 2026, 22:17", weight: "800 kg", price: "₦48,000", status: "pending", statusLabel: "Pending" },
+  { org: "CleanCycle Abuja", material: "Glass", orderId: "RC-7900", date: "01 Aug 2026, 01:00", weight: "800 kg", price: "₦48,000", status: "completed", statusLabel: "Completed" },
+  { org: "EcoHub Ikeja", material: "PET Plastic", orderId: "RC-8814", date: "20 Jul 2026, 00:59", weight: "120 kg", price: "₦23,400", status: "completed", statusLabel: "Completed" },
+  { org: "Zenith Waste Co.", material: "Scrap Metal", orderId: "RC-8790", date: "12 Jul 2026, 00:59", weight: "60 kg", price: "₦31,200", status: "completed", statusLabel: "Completed" },
+];
+
+const list = document.querySelector('.purchase-list');
+
+list.innerHTML = purchases.map(p => `
+  <div class="purchase-row">
+    <div class="purchase-info">
+      <div class="title">${p.org} &middot; ${p.material}</div>
+      <div class="meta">${p.orderId} &middot; ${p.date}</div>
+    </div>
+    <div class="purchase-right">
+      <div class="purchase-amount">${p.weight} &middot; ${p.price}</div>
+      <span class="status-pill ${p.status}">${p.statusLabel}</span>
+    </div>
+  </div>
+`).join('');

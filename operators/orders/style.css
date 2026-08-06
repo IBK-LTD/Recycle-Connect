@@ -94,31 +94,30 @@ body{
 }
 
 /* ============== Grid Layout ============== */
+/* ============== Grid Layout ============== */
 .order-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  align-items: stretch;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.order-col {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.secure-reservation {
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.order-col .card1{
-    flex: 1;
+.material-manifest {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.order-col .card {
-  flex: none;
+.collection-hub {
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
-.order-col-right .card-dark {
-  flex: 1;
-}
 
 .card{
     background: #fff;
@@ -496,4 +495,8 @@ body{
 
 .countdown-card-expired {
   opacity: 0.6;
+}
+
+.order-details{
+  padding-bottom: 20px;
 }
