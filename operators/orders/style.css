@@ -216,6 +216,12 @@ body{
   background: #2D6A4F;
   color: #ffffff;
   margin-bottom: 18px;
+
+}
+
+.btn-primary a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .btn-primary:hover {

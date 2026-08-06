@@ -19,7 +19,7 @@ body {
 }
 
 .login-left{ 
-    background-image: url(Logo3/bg.png);
+    background-image: url(../operators/login\ page/logo2/bg\ image.png);
     background-size: cover;
     background-position: center;
     display: flex;

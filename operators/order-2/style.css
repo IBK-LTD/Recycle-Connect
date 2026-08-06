@@ -207,8 +207,13 @@ body{
     font-size:20px;
 }
 
+.confirm-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .confirm-btn:hover{
-    background: #fff;
+    
     color:#0b6d2b;
     border: 2px solid #0b6d2b;
     transform:translateY(-2px);
