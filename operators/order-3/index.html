@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmed</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- CONFIRMATION HEADER -->
+
+        <div class="confirmation-header">
+            <div class="success-icon">
+               <i class="fa-solid fa-check"></i>
+            </div>
+        <div class="header-content">
+            <h1>Reservation Confirmed!</h1>
+            <div class="status-row">
+                <span class="order-tag">ORDER #EC-9921</span>
+                <span class="dot"></span>
+                <span class="status-text">Successfully Logged</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFORMATION CARDS -->
+
+    <div class="info-grid">
+    
+        <!-- Transaction Details -->
+
+        <div class="info-card">
+            <div class="card-title">
+                <i class="fa-regular fa-clipboard"></i>
+                <h2>Transaction Details</h2>
+            </div>
+
+            <div class="detail-row">
+                <span>Amount Paid</span>
+                <strong class="amount"> ₦13,350.00</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Payment Method</span>
+                <strong>
+                    <i class="fa-solid fa-building-columns"></i>
+                    Paystack
+                </strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Date & Time</span>
+                <strong>Oct 24, 2023 · 14:32</strong>
+            </div>
+        </div>
+
+        <!-- Material Summary -->
+
+        <div class="info-card">
+            <div class="card-title">
+                <i class="fa-solid fa-recycle"></i>
+                <h2>Material Summary</h2>
+            </div>
+
+            <div class="detail-row">
+                <span>Material Class</span>
+                <strong>Industrial PET Mix</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Total Weight</span>
+                <span class="weight-badge">4.2t</span>
+            </div>
+
+            <div class="detail-row">
+                <span>Moisture</span>
+                <strong class="danger"> < 2%</strong>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NEXT STEPS -->
+
+    <div class="next-section">
+        <h2>What's next?</h2>
+        <div class="steps-grid">
+
+            <!-- Step 1 -->
+
+            <div class="step-card active">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <span>LOGISTICS</span>
+                    <p>
+                        Manifest generated. Assign a driver for pickup or prepare for hub drop-off.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="step-card">
+                <div class="step-number gray">2</div>
+                <div class="step-content">
+                    <span>SECURITY</span>
+                    <p>
+                        QR code verification at the gate is mandatory for all material entry.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="step-card">
+                <div class="step-number gray">3</div>
+                <div class="step-content">
+                    <span>UNLOADING</span>
+                    <p>
+                        Automated weigh bridge scaling and quality validation check.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+
+    <div class="action-buttons">
+        <button
+            class="btn btn-primary" id="directionBtn">
+            <i class="fa-regular fa-map"></i>
+            View Directions to Hub
+        </button>
+
+        <button
+            class="btn btn-outline"id="receiptBtn">
+            <i class="fa-solid fa-download"></i>
+            Download Receipt
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecycleConnect Payment</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="payment-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="payment-left">
+        <!-- Payment Tabs -->
+        <div class="payment-tabs">
+            <button class="tab active" data-tab="transfer">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <span>Transfer</span>
+            </button>
+
+            <button class="tab" data-tab="card">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Card</span>
+            </button>
+
+            <button class="tab" data-tab="bank">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Bank</span>
+            </button>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="divider"></div>
+
+        .<!-- TRANSFER CONTENT -->
+
+        <div class="tab-content active" id="transfer">
+
+            <!-- Transfer Card -->
+
+            <div class="transfer-card">
+
+                <!-- Bank Name -->
+
+                <div class="transfer-row">
+                    <div class="label">Bank Name</div>
+                    <div class="value">Titan Bank</div>
+                </div>
+
+                <!-- Account Number -->
+
+                <div class="transfer-row">
+                    <div class="label">Account Number</div>
+                    <div class="value account">
+                        <span id="accountNumber">0123456789</span>
+                        <button
+                            id="copyBtn" class="copy-btn">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Account Name -->
+
+                <div class="transfer-row">
+                    <div class="label">Account Name</div>
+                    <div class="value">Paystack-RecycleConnect</div>
+                </div>
+            </div>
+
+            <!-- Instruction -->
+
+            <div class="instruction">
+                Transfer exactly ₦13,350.00 to the account above. This account expires in
+                <span id="countdown">30:00</span>
+                minutes.
+            </div>
+
+            <!-- Confirm Button -->
+
+            <button
+                id="confirmPayment"class="confirm-btn">
+                <i class="fa-regular fa-circle-check"></i>
+                <span>I have sent the money</span>
+            </button>
+        </div>
+
+        <!-- CARD TAB --> 
+
+        <div class="tab-content" id="card">
+            <div class="coming-soon">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3>Card Payment</h3>
+                <p>
+                    Secure card payment will be available soon.
+                </p>
+            </div>
+        </div>
+
+        <!-- BANK TAB -->
+
+        <div class="tab-content" id="bank">
+            <div class="coming-soon">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>Bank Payment</h3>
+                <p>
+                    Additional banking options will be available soon.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="payment-footer">
+            <span>
+                <i class="fa-solid fa-shield-halved"></i>
+                PCI-DSS Compliant
+            </span>
+            <span class="footer-dot"></span>
+            <span>Secured by Paystack</span>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="payment-right">
+
+        <!-- Logo -->
+
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <h2>
+                <span>Recycle</span>Connect
+            </h2>
+        </div>
+
+        <!-- Payment Information -->
+
+        <div class="summary">
+            <p class="summary-title">Payment for</p>
+            <h2>
+                PET Plastics Batch
+                #RC-8814
+            </h2>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <!-- Amount -->
+
+        <div class="amount-box">
+            <p>Amount to pay</p>
+            <h1>₦13,350.00</h1>
+        </div>
+
+        <!-- Email -->
+
+        <div class="customer-email">
+            test@recycleconnect.com
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
